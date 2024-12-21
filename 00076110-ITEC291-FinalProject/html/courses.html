@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="../img/favicon-32x32.png">
+
+</head>
+<body>
+  <div class="box-model">
+
+    <!--navigation bar-->
+    <div class="nav">
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+  
+          <li class="nav__item"><a href="courses.html" class="nav__link">Courses</a></li>
+  
+          <li class="nav__item"><a href="resources.html" class="nav__link">Resources</a></li>
+  
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+  
+          <li class="nav__item"><a href="login.html" class="nav__link">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <br><br>
+
+    <!--
+    images:
+    https://www.oshacademy.com/courses/list/course-catalog.html
+
+    flip-card code:
+    https://www.w3schools.com/howto/howto_css_flip_card.asp#gsc.tab=0
+    -->
+
+    <div class="courses-page">
+
+    <h1 class="courses-page__title main-heading">Courses</h1>
+    <br>
+
+    <div class="courses-page__grid">
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Front Side of the Card -->
+    <div class="flip-card-front">
+      <img src="../img/OSHA.jpg" alt="Avatar">
+    </div>
+    <!-- Back Side of the Card -->
+    <div class="flip-card-back">
+      <h1>100</h1>
+      <h2>Introduction to OSHAcademy</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#100">
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Front Side of the Card -->
+    <div class="flip-card-front">
+      <img src="../img/course105.jpg" alt="Avatar">
+    </div>
+    <!-- Back Side of the Card -->
+    <div class="flip-card-back">
+      <h1>105</h1>
+      <h2>Hazard Communication: Basic</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#105">
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Front Side of the Card -->
+    <div class="flip-card-front">
+      <img src="../img/course107.jpg" alt="Avatar">
+    </div>
+    <!-- Back Side of the Card -->
+    <div class="flip-card-back">
+      <h1>107</h1>
+      <h2>Emergency Action and Fire Prevention Plans</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#107">
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Front Side of the Card -->
+    <div class="flip-card-front">
+      <img src="../img/course108.jpg" alt="Avatar">
+    </div>
+    <!-- Back Side of the Card -->
+    <div class="flip-card-back">
+      <h1>108</h1>
+      <h2>Personal Protective Equipment: Basic</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#108">
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Front Side of the Card -->
+    <div class="flip-card-front">
+      <img src="../img/course603.jpg" alt="Avatar">
+    </div>
+    <!-- Back Side of the Card -->
+    <div class="flip-card-back">
+      <h1>603</h1>
+      <h2>Stairway and Ladder Safety</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#603">
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <!-- Front Side of the Card -->
+    <div class="flip-card-front">
+      <img src="../img/course611.jpg" alt="Avatar">
+    </div>
+    <!-- Back Side of the Card -->
+    <div class="flip-card-back">
+      <h1>611</h1>
+      <h2>Nail Gun Safety</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#611">
+        See More
+      </button>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <!--
+    modal code:
+    https://www.w3schools.com/bootstrap5/bootstrap_modal.php 
+    -->
+    <!-- modal 100 -->
+<div class="modal" id="100">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Introduction to OSHA Academy</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quantum Aristoxeni ingenium consumptum videmus in musicis? </p>
+
+<p>Quid, si etiam iucunda memoria est praeteritorum malorum? Nam memini etiam quae nolo, oblivisci non possum quae volo. Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Primum in nostrane potestate est, quid meminerimus? Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Hunc vos beatum; </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- modal 105 -->
+<div class="modal" id="105">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+  <!-- Modal Header -->
+  <div class="modal-header">
+    <h4 class="modal-title">Hazard Communication: Basic</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+  <!-- Modal body -->
+  <div class="modal-body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quantum Aristoxeni ingenium consumptum videmus in musicis? </p>
+
+<p>Quid, si etiam iucunda memoria est praeteritorum malorum? Nam memini etiam quae nolo, oblivisci non possum quae volo. Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Primum in nostrane potestate est, quid meminerimus? Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Hunc vos beatum; </p>
+  </div>
+
+  <!-- Modal footer -->
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+
+</div>
+</div>
+</div>
+
+<!-- modal 107 -->
+<div class="modal" id="107">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Emergency Action and Fire Prevention Plans</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+  
+    <!-- Modal body -->
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quantum Aristoxeni ingenium consumptum videmus in musicis? </p>
+  
+  <p>Quid, si etiam iucunda memoria est praeteritorum malorum? Nam memini etiam quae nolo, oblivisci non possum quae volo. Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Primum in nostrane potestate est, quid meminerimus? Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Hunc vos beatum; </p>
+    </div>
+  
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+  
+  </div>
+  </div>
+  </div>
+
+<!-- modal 108 -->
+<div class="modal" id="108">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Personal Protective Equipment: Basic</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+  
+    <!-- Modal body -->
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quantum Aristoxeni ingenium consumptum videmus in musicis? </p>
+  
+  <p>Quid, si etiam iucunda memoria est praeteritorum malorum? Nam memini etiam quae nolo, oblivisci non possum quae volo. Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Primum in nostrane potestate est, quid meminerimus? Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Hunc vos beatum; </p>
+    </div>
+  
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+  
+  </div>
+  </div>
+  </div>
+
+  <!-- modal 603 -->
+<div class="modal" id="603">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Stairway and Ladder Safety</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+  
+    <!-- Modal body -->
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quantum Aristoxeni ingenium consumptum videmus in musicis? </p>
+  
+  <p>Quid, si etiam iucunda memoria est praeteritorum malorum? Nam memini etiam quae nolo, oblivisci non possum quae volo. Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Primum in nostrane potestate est, quid meminerimus? Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Hunc vos beatum; </p>
+    </div>
+  
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+  
+  </div>
+  </div>
+  </div>
+
+  <!-- modal 611 -->
+<div class="modal" id="611">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+  
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Nail Gun Safety</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+  
+    <!-- Modal body -->
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut unde est hoc contritum vetustate proverbium: quicum in tenebris? Quantum Aristoxeni ingenium consumptum videmus in musicis? </p>
+  
+  <p>Quid, si etiam iucunda memoria est praeteritorum malorum? Nam memini etiam quae nolo, oblivisci non possum quae volo. Sic vester sapiens magno aliquo emolumento commotus cicuta, si opus erit, dimicabit. Duo Reges: constructio interrete. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Primum in nostrane potestate est, quid meminerimus? Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Hunc vos beatum; </p>
+    </div>
+  
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+  
+  </div>
+  </div>
+  </div>
+
+</div>
+
+    <br><br>
+
+    <!--enrollment form-->
+
+    <section class="form courses-page__bg-img">
+      <h1 class="form__title courses-page__color">Course Enrollment</h1>
+      <form class="form__container">
+        <!-- Full Name -->
+        <div class="form__group">
+          <label for="full-name" class="form__label courses-page__color">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            class="form__input"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+    
+        <!-- Email Address -->
+        <div class="form__group">
+          <label for="email" class="form__label courses-page__color">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form__input"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+    
+        <!-- Select Course -->
+        <div class="form__group">
+          <label for="course" class="form__label courses-page__color">Select Course</label>
+          <select id="course" name="course" class="form__select" required>
+            <option value="" disabled selected>Select a course</option>
+            <option value="course-1">Introduction to OSHAcademy</option>
+            <option value="course-2">Hazard Communication: Basic</option>
+            <option value="course-3">Emergency Action and Fire Prevention Plans</option>
+            <option value="course-4">Personal Protective Equipment: Basic</option>
+            <option value="course-5">Stairway and Ladder Safety</option>
+            <option value="course-6">Nail Gun Safety</option>
+          </select>
+        </div>
+    
+        <!-- Comments -->
+        <div class="form__group">
+          <label for="comments" class="form__label courses-page__color">Additional Comments (Optional)</label>
+          <textarea
+            id="comments"
+            name="comments"
+            class="form__textarea"
+            placeholder="Enter any additional information here"
+          ></textarea>
+        </div>
+    
+        <!-- Submit Button -->
+        <div class="form__group">
+          <button type="submit" class="form__button">Enroll Now</button>
+        </div>
+      </form>
+    </section>
+    
+
+    <br><br>
+    
+
+    <!--footer-->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__col">
+      <h4 class="footer__title">Apex Safety Solution</h4>
+      <p class="footer__text">Providing quality safety training for a better tomorrow.</p>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__title">Quick Links</h4>
+      <ul class="footer__list">
+        <li><a href="../index.html" class="footer__link">Home</a></li>
+        <li><a href="courses.html" class="footer__link">Courses</a></li>
+        <li><a href="resources.html" class="footer__link">Resources</a></li>
+        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__title">Contact Us</h4>
+      <p class="footer__text">123 Safety Street, Safe City, SC 12345</p>
+      <p class="footer__text">Phone: +1 (123) 456-7890</p>
+      <p class="footer__text">Email: info@apexsafety.com</p>
+    </div>
+    <div class="footer__col footer__social">
+      <h4 class="footer__title">Follow Us</h4>
+      <a href="#" class="fa fa-facebook footer__social-icons"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copyright">&copy; 2024 Apex Safety Solution. All Rights Reserved.</p>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>

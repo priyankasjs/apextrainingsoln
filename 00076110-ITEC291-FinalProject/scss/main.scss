@@ -1,0 +1,21 @@
+// Import Abstracts
+@import 'abstracts/variables';
+// @import 'abstracts/mixins';
+
+// Import Base
+@import 'base/typography';
+@import 'base/base';
+
+// Import Layout
+@import 'layout/hero';
+@import 'layout/footer';
+@import 'layout/nav-bar';
+@import 'layout/form';
+@import 'layout/faq';
+
+// Import Pages
+@import 'pages/home-page';
+@import 'pages/login';
+@import 'pages/courses-page';
+@import 'pages/contact';
+@import 'pages/resource';

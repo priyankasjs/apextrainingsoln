@@ -1,0 +1,189 @@
+.courses-page {
+ padding: 2rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    gap: 3rem;
+  }
+
+  &__bg-img {
+    background-image: url("../../img/pexels-didsss-1.jpg");
+    min-height: 23.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__color {
+    color: $color-white;
+  }
+}
+
+
+/* Modal styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position for modal */
+  z-index: 1050; /* Ensure it sits on top of other content */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  
+  .modal-dialog {
+    max-width: 56.25rem; /* Control the max size of the modal */
+    margin: 10% auto; /* Center the modal vertically and horizontally */
+    
+    .modal-content {
+      background-color: $color-white; /* White background for the content */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the modal */
+      
+      /* Modal Header */
+      .modal-header {
+        padding: 15px;
+        border-bottom: 1px solid $color-cream; /* Light border between header and body */
+        
+        .modal-title {
+          font-size: 1.25rem; /* Slightly larger font for the title */
+          font-weight: bold;
+          color: $color-almost-black; /* Dark text for better contrast */
+        }
+
+        .btn-close {
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          color: $color-almost-black;
+          cursor: pointer;
+          
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      /* Modal Body */
+      .modal-body {
+        padding: 20px;
+        color: #555; /* Slightly lighter text color */
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+        
+        p {
+          margin-bottom: 1.5rem; /* Add spacing between paragraphs */
+        }
+      }
+
+      /* Modal Footer */
+      .modal-footer {
+        padding: 15px;
+        border-top: 1px solid $color-cream; /* Light border between body and footer */
+        
+        .btn {
+          font-size: 1rem;
+          padding: 10px 20px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+
+        .btn-danger {
+          background-color: #dc3545;
+          color: white;
+          
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Ensure the modal is visible when triggered */
+.modal.show {
+  display: block;
+}
+
+/* Flip Card Container */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Perspective for 3D effect */
+
+  &:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s; /* Smooth flip animation */
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow for depth */
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; /* Hide the back when flipped */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; /* Center content vertically and horizontally */
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: $color-black;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio of the image */
+        border-radius: 8px; /* Rounded corners */
+      }
+    }
+
+    .flip-card-back {
+      background-color: $main-blue;
+      color: white;
+      transform: rotateY(180deg); /* Flip the back side */
+      text-align: center;
+      padding: 20px;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: $color-blue;
+        color: $color-white;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $color-dark-blue;
+        }
+      }
+    }
+  }
+}
+

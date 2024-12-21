@@ -1,0 +1,280 @@
+//about section
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; // Space between the text and images
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px; // Space between paragraphs
+  }
+
+  img {
+    width: 100%;
+    max-width: 31.25rem; // Limit max width of images
+    height: auto; // Maintain aspect ratio
+    border-radius: 8px; // Slightly round the corners of images
+    object-fit: cover; // Make sure the image covers the container
+    margin: 0 auto; // Center the images
+  }
+
+  // First block: Image on the left, text on the right
+  .about__block--left {
+    display: flex;
+    flex-direction: row; // Place image and text side by side
+    align-items: center; // Align items vertically in the center
+    gap: 1.25rem; // Space between image and text
+
+    img {
+      order: 0; // Image on the left
+    }
+
+    p {
+      order: 1; // Text on the right
+      flex: 1; // Allow text to take remaining space
+    }
+  }
+
+  // Second block: Image on the right, text on the left
+  .about__block--right {
+    display: flex;
+    flex-direction: row-reverse; // Reverse the direction to place the image on the right
+    align-items: center; // Align items vertically in the center
+    gap: 20px; // Space between image and text
+
+    img {
+      order: 0; // Image on the right
+    }
+
+    p {
+      order: 1; // Text on the left
+      flex: 1; // Allow text to take remaining space
+    }
+  }
+}
+
+
+//services
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+
+  &__card {
+    width: 450px;
+    background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  &__image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &--1 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(96, 179, 255, 0.7),
+        rgba(102, 229, 255, 0.6)
+      ),
+        url("../../img/pexels-pixabay-2.jpg");
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(96, 179, 255, 0.7),
+        rgba(102, 229, 255, 0.6)
+      ),
+        url("../../img/pexels-icsa-1.jpg");
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(96, 179, 255, 0.7),
+        rgba(102, 229, 255, 0.6)
+      ),
+        url("../../img/pexels-pavel-danilyuk-1.jpg");
+    }
+
+    .services__title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: $color-white;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__details {
+    padding: 20px;
+
+    .services__subtitle {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $color-almost-black;
+      margin-bottom: 10px;
+    }
+
+    .services__text {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    .services__btn {
+      //display: inline-block;
+      text-decoration: none;
+      background-color: $color-blue;
+      color: $color-white;
+      padding: 10px 20px;
+      border-radius: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $color-dark-blue;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+
+//featured courses
+.featured-courses {
+  padding: 2rem 0; // Adjust padding for a balanced look
+  display: flex;
+  justify-content: center; // Center the section horizontally
+  align-items: center; // Center the content vertically (if needed)
+  text-align: center;
+
+  &__container {
+    max-width: 800px; // Restrict the section width
+    margin: 0 auto; // Center the container
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Two columns layout
+    gap: 1rem; // Reduce gap between columns
+
+    @media screen and (max-width: 768px) { // Responsive for smaller screens
+      grid-template-columns: 1fr; // Single column layout
+      gap: 0.5rem;
+    }
+  }
+
+  &__col {
+    text-align: left; // Align column content to the left
+  }
+
+  &__title {
+    font-size: 1.5rem; // Slightly smaller font size
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    &.recommended-title {
+      color: lighten($color-blue, 10%);
+    }
+
+    &.popular-title {
+      color: $color-dark-blue;
+    }
+  }
+
+  &__list {
+    list-style: none; // Remove default list styles
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.6rem; // Compact list item spacing
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1rem; // Smaller link font size
+    color: $color-blue;
+    transition: color 0.3s;
+
+    &:hover {
+      color: darken($color-blue, 15%);
+    }
+  }
+
+  &__view-all {
+    display: inline-block;
+    margin-top: 1rem; // Adjust spacing below the list
+    font-size: 1rem; // Smaller "View All" font
+    color: $color-dark-blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: darken($color-dark-blue, 15%);
+    }
+  }
+}
+
+
+  
+  //testimonials
+  #testimonials {
+  .testimonial-item {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    .testimonial-img {
+      width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 2rem;
+    }
+
+    .testimonial-text {
+      h3 {
+        font-size: 1.5rem;
+        color: $color-almost-black;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #333;
+    }
+    .active {
+      background-color: #555;
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+}

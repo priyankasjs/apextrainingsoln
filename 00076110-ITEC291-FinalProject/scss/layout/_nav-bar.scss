@@ -1,0 +1,42 @@
+.nav {
+  background-color: $main-blue;
+  padding: 10px 0; 
+
+  nav {
+    max-width: 62.5rem; 
+    margin: 0 auto; 
+  }
+
+  .nav__list {
+    list-style: none; // Remove default list styles
+    display: flex; // Display the items in a horizontal row
+    justify-content: center; // Center the list items
+    padding: 0; // Remove default padding
+    margin: 0; // Remove default margin
+  }
+
+  .nav__item {
+    margin: 0 20px; // Add some space between each nav item
+  }
+
+  .nav__link {
+    color: $color-white; // White text color
+    text-decoration: none; // Remove underline from links
+    font-size: 18px; // Set font size for links
+    text-transform: uppercase; // Capitalize the text
+    padding: 10px 15px; // Add padding around the links
+    transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition effect for hover
+
+    &:hover {
+      background-color: #555; // Darker background on hover
+      color: $color-white; // Keep text color white on hover
+      border-radius: 5px; // Rounded corners on hover
+    }
+
+    &.active {
+      background-color: #f1f1f1; // Light background for active link
+      color: $color-almost-black; // Dark text color for active link
+      border-radius: 5px; // Rounded corners for active link
+    }
+  }
+}

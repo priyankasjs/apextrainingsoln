@@ -1,0 +1,41 @@
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../../img/pexels-rezwan-1.jpg'); // Gradient + Background image
+  background-size: cover; // Ensure the background image covers the entire section
+  background-position: center; // Center the background image
+  color: #fff; // Text color (white)
+  padding: 80px 20px; // Add padding for top and bottom space
+  text-align: center; // Center align text
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); // Apply clip-path for angled corners
+
+  .hero__title {
+    font-size: 3rem; // Large title font size
+    font-weight: 700; // Make title bold
+    margin-bottom: 20px; // Space between title and subtitle
+    text-transform: uppercase; // Uppercase text for emphasis
+    letter-spacing: 2px; // Add some space between letters
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem; // Set font size for subtitle
+    margin-bottom: 30px; // Space between subtitle and button
+    font-weight: 300; // Lighter font weight for subtitle
+    line-height: 1.5; // Line height for better readability
+  }
+
+  .hero__btn {
+    padding: 12px 30px; // Button padding for better click area
+    font-size: 1rem; // Button text size
+    color: #fff; // Button text color
+    background-color: #007bff; // Button background color
+    border: none; // Remove border
+    border-radius: 25px; // Rounded corners for the button
+    text-decoration: none; // Remove underline from the link
+    transition: background-color 0.3s ease, transform 0.3s ease; // Transition for hover effect
+
+    &:hover {
+      background-color: #0056b3; // Change background on hover
+      transform: scale(1.05); // Slightly scale the button on hover
+    }
+  }
+}
