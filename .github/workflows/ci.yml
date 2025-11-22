@@ -12,6 +12,9 @@ jobs:
           echo "chassis" >> car.txt
           echo "engine" >> car.txt
           echo "wheels" >> car.txt
+  test-the-car:
+    runs-on: ubuntu-latest
+    steps:
       - name: Test the car
         run: |
           test -f build/car.txt
